@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conextx • RedeViva</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header style="
+  padding:14px;
+  font-size:22px;
+  font-weight:bold;
+">
+  Conextx
+</header>
+
+<!-- STORIES -->
+<div id="stories"></div>
+
+<!-- FEED -->
+<section id="feed" class="screen active fade-in"></section>
+
+<!-- NAV BAR -->
+<nav>
+
+  <!-- HOME -->
+  <div class="nav-btn active"
+       onclick="setActive(this); location.href='app.html'">
+    <svg viewBox="0 0 24 24">
+      <path d="M3 12l9-9 9 9v9H3z"/>
+    </svg>
+  </div>
+
+  <!-- CHAT -->
+  <div class="nav-btn"
+       onclick="setActive(this); location.href='chat.html'">
+    <svg viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+  </div>
+
+  <!-- PERFIL -->
+  <div class="nav-btn"
+       onclick="setActive(this); location.href='profile.html'">
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4 21c0-4 16-4 16 0"/>
+    </svg>
+  </div>
+
+</nav>
+
+<!-- SCRIPTS -->
+<script src="js/app.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/stories.js"></script>
+<script src="js/feed.js"></script>
+<script src="js/comments.js"></script>
+
+</body>
+</html>

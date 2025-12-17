@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil • Conextx</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<section class="fade-in" style="padding:20px;text-align:center;">
+
+  <img id="profileAvatar" style="width:90px;height:90px;border-radius:50%;">
+
+  <h2 id="profileName"></h2>
+  <p id="profileBio"></p>
+
+  <div style="display:flex;justify-content:center;gap:25px;margin:15px 0;">
+    <div><b id="postCount">0</b><br><small>posts</small></div>
+    <div><b id="friendCount">0</b><br><small>amigos</small></div>
+  </div>
+
+  <button onclick="editProfile()">Editar perfil</button>
+
+</section>
+
+<!-- GRID DE POSTS -->
+<section id="profilePosts" style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;"></section>
+
+<nav>
+  <div class="nav-btn" onclick="location.href='app.html'"></div>
+  <div class="nav-btn" onclick="location.href='chat.html'"></div>
+  <div class="nav-btn active" onclick="location.href='profile.html'"></div>
+</nav>
+
+<script src="js/profile.js"></script>
+</body>
+</html>
